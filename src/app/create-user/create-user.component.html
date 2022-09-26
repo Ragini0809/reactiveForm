@@ -1,0 +1,58 @@
+<div class="form mt-5 p-5" style="width: 50%;background-color: rgb(217, 239, 252);" *ngIf="form">
+    <form [formGroup]="createForm" (ngSubmit)="onSubmit()">
+      <div class="mb-3">
+        <label class="form-label">Firstname</label>
+        <input type="text" class="form-control" placeholder="Enter your Firstname" formControlName="firstName">
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Lastname</label>
+        <input type="text" class="form-control" placeholder="Enter your Lastname" formControlName="lastName">
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Email address</label>
+        <input type="email" class="form-control" placeholder="name@example.com" formControlName="email">
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Mobile Number</label>
+        <input type="text" class="form-control" placeholder="Enter your Mobile Number" formControlName="phone">
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Company</label>
+        <input type="text" class="form-control" placeholder="Enter your Company" formControlName="company">
+      </div>
+      
+      <div class="mb-3">
+        <label class="form-label">Gender</label>
+        <div>
+      <label class="form-label me-3">
+          Male
+       <input type="radio" value="male" formControlName="genderControl">
+      </label>
+      <label class="form-label">
+        Female
+       <input type="radio" value="female" formControlName="genderControl">
+      </label>
+    </div>
+        
+      </div>
+      <div class="mb-3">
+        <label class="form-label">DOB</label>
+        <input type="date" class="form-control" formControlName="dob">
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Password</label>
+        <input type="password" class="form-control" formControlName="password">
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Confirm Password</label>
+        <input type="password" class="form-control" formControlName="confirmPassword">
+      </div>
+      <div class="action">
+        <button class="btn btn-primary" type="submit">{{actionName}}</button>
+        <button class="btn btn-primary ms-3" >Cancel</button>
+
+      </div>
+    </form>
+  </div>

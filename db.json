@@ -1,0 +1,16 @@
+{
+  "users": [
+    {
+      "id": 19,
+      "firstName": "Nona",
+      "lastName": "williams",
+      "email": "nona@gmail.com",
+      "phone": "9172345687",
+      "company": "flex",
+      "genderControl": "female",
+      "dob": "2022-09-26",
+      "password": "3445",
+      "confirmPassword": "3456"
+    }
+  ]
+}
